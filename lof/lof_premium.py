@@ -22,7 +22,7 @@ threshold = 0.5 # 0.1%
 lof['实时溢价'] = pd.to_numeric(lof['实时溢价'].str.rstrip('%'),errors='coerce')
 lof = lof[lof['实时溢价'] > threshold]
 ## print the result
-print(lof[['代码', '名称', '实时溢价','update_time']])
+print(lof[['代码', '名称', '实时溢价','申购限额','update_time']])
 
 # %%
 # Get the latest data from palmmicro.com
